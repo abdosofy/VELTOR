@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+html,body,#root{
+    overflow-x: hidden;
+    width: 100%;
+}
 .header{
   display: flex;
   justify-content: space-between;
@@ -10,6 +14,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  overflow: hidden;
 }
 .logo-header a{
   text-decoration: none;
@@ -80,6 +85,7 @@
 .box-img-hero{
   display: flex;
   width: 100%;
+  overflow: hidden;
 }
 .box-img-hero img{
   width: 250px;
@@ -108,15 +114,20 @@ width: 100%;
 height: 100vh;
 position: 0;
 z-index: 0;
+overflow: hidden;
 }
 .photo-winter img{
   width: 102%;
   height: 100vh;
   object-fit: cover;
   transform: translateX(-15px);
+  overflow: hidden;
 }
 .hero{
   position: relative;
+}
+.moon{
+  overflow: hidden;
 }
 .moon img{
   position: absolute;
@@ -126,6 +137,7 @@ z-index: 0;
   mix-blend-mode: screen;
   transform: translate(300px , -120px);
   z-index: 0;
+  overflow: hidden;
 }
 .header {
   animation: fadeDown 1s ease forwards;

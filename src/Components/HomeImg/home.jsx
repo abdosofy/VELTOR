@@ -3,6 +3,7 @@ import winter from "../HomeImg/winter.png"
 import moon from "../HomeImg/moon.webp"
 export default function Home(){
     return(
+        <>
         <section className="hero">
             <div className="hero-img">
                 <img id="heroImg" src={heroimg} alt="" />
@@ -18,5 +19,6 @@ export default function Home(){
                 <img src={moon} alt="" />
             </div>
         </section>
+        </>
     )
 }
